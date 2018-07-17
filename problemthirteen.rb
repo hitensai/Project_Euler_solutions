@@ -105,6 +105,5 @@ sum = 0
 nums.each_line do |f|
   sum += f.to_i
 end
-sum = sum.to_s.split('')
-answer = sum.first(10).join('')
-puts "Answer: #{answer}"
+sum = sum.to_s.split('').first(10).join('')
+puts "Answer: #{sum}"
